@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 18px 40px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: white;
+    padding: 55px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 38px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 22px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3 {
+    color: darkblue;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background-color: #f8f8ff;
+    border: 1px solid #d8d8ee;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: navy;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #111;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header,
+    .hero {
+        padding: 22px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
